@@ -1,0 +1,84 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Note, just enabling flex with the CSS for the .content class content starts
+flowing. To enforce the single column layout for as long as we have to
+explicitly code that. */
+@media screen and (min-width: 550px) {
+    .hero, .news, .scores, .weather {
+      width: 100%;
+  }
+}
+
+/* The weather component moves up to the right of hero image.
+Within the weather component, the large temperature reading appears beneath the
+large weather icon */
+@media screen and (min-width: 551px) and (max-width: 700px) {
+  .hero {
+    order: 0;
+    width: 50%;
+  }
+
+  .weather {
+    order: 5;
+    width: 50%;
+  }
+
+  .top-news {
+    order: 10;
+  }
+
+  .scores {
+    order: 15;
+  }
+
+  .recent-news {
+    order: 20;
+  }
+}
+
+/* Within the weather componenet, the large temperature reading moves up next
+to the large weather icon */
+@media screen and (min-width: 630px) and (max-width: 700px) {
+  
+}
+
+/* Top news moves up to the right of the hero image and immediately below
+sports is on the left side and weather on the right side. */
+@media screen and (min-width: 701px) {
+  .hero {
+    order: 0;
+    width: 50%;
+  }
+
+  .top-news {
+    order: 5;
+    width: 50%;
+  }
+
+  .scores {
+    order: 10;
+    width: 50%;
+  }
+
+  .weather {
+    order: 15;
+    width: 50%;
+  }
+
+  .recent-news {
+    order: 20;
+  }
+}
+
+/* Content does not increase in width beyond this point, we just increase
+margin size */
+@media screen and (min-width: 851px) {
+  .content {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

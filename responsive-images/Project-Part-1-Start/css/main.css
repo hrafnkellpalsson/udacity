@@ -1,0 +1,37 @@
+/* @import statement must appear at the top of your css document */
+/* @import url(http://weloveiconfonts.com/api/?family=zocial); */
+
+/* zocial */
+[class*="zocial-"]::before {
+  font-family: 'zocial', sans-serif;
+}
+
+/*
+
+Your styles go here!
+
+Hint! You'll probably want to start by styling:
+  * <body>
+  * <article>
+  * <h1>
+  * <img>
+
+I've left some boilerplate below for you.
+
+*/
+
+body {
+
+}
+
+article {
+  max-width: 50em;
+}
+
+h1 {
+
+}
+
+img {
+  max-width: 100%;
+}
