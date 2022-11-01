@@ -1,5 +1,5 @@
 // Insert this code, between script tags, into the form of badwebsite to carry
-// out the XSS attack
+// out the XSS attack.
 
 // mode: 'no-cors' is not strictly needed
 <script>
